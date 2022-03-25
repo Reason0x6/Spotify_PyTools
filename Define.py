@@ -7,8 +7,8 @@ from spotipy.oauth2 import SpotifyClientCredentials
 pitchClassNotation = ["C","C#/Db", "D","D#/Eb","E","F","F#/Gb","G","G#/Ab","A","A#/Bb","B"]
 
 # Spotify Dev Details
-cid     = << Get From Spotify Dev >>
-secret  = << Get From Spotify Dev >>
+cid     = 'e3f8b4b5934845b6b8384d57f64ed7cf'
+secret  = '218f56726b6143b6be0d567ae542fc75'
 
 #Authentication - without user
 client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
@@ -72,7 +72,7 @@ for track in sp.playlist_tracks(playlist_URI)["items"]:
     print("--------------------------------------------")
 
 print("Playlist Size:\t\t" + str(size) + " songs")
-print("Playlist Valence:\t%.3f" % ((val/size)*100), end="%\n")
+print("Playlist Happiness:\t%.3f" % ((val/size)*100), end="%\n")
 print("Instrumentalness:\t%.3f" % ((instru/size)*100), end="%\n")
 genreOut = "\t\t"
 for x in Counter(genres).most_common(5):
