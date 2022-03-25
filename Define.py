@@ -27,8 +27,6 @@ genres = []
 
 for track in sp.playlist_tracks(playlist_URI)["items"]:
 
-
-
     #URI
     track_uri = track["track"]["uri"]
     #Track name
