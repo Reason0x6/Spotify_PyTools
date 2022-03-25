@@ -42,11 +42,7 @@ Playlist Valence:       24.776%
 Instrumentalness:       17.509%
 
 Genre Mix:              pop,
-
                         art pop,
-                        
                         rock,
-                        
                         australian indie,
-                        
                         australian pop
