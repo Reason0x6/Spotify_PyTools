@@ -3,35 +3,35 @@ A Spotipy implementation that takes a Spotify playlist url &amp; give song, arti
 
 ## Example Output:
 
-Key:                            | D#/Eb Major
+Key:                             D#/Eb Major
 
-Valence (0-1) -> Sad-Happy:     | 0.173
+Valence (0-1) -> Sad-Happy:      0.173
 
-Instrumentalness (0-1):         | 0.915
+Instrumentalness (0-1):          0.915
 
-Track Name:                     | Alive - Reprise
+Track Name:                      Alive - Reprise
 
-Artist:                         | RÜFÜS DU SOL
+Artist:                          RÜFÜS DU SOL
 
-Album:                          | Surrender
+Album:                           Surrender
 
-Artist Genres:                  | ['australian electropop', 'indietronica']
+Artist Genres:                   ['australian electropop', 'indietronica']
 
 --------------------------------------------
 
-Key:                            | C#/Db Major
+Key:                             C#/Db Major
 
-Valence (0-1) -> Sad-Happy:     | 0.29
+Valence (0-1) -> Sad-Happy:      0.29
 
-Instrumentalness (0-1):         | 0.0616
+Instrumentalness (0-1):          0.0616
 
-Track Name:                     | On My Knees
+Track Name:                      On My Knees
 
-Artist:                         | RÜFÜS DU SOL
+Artist:                          RÜFÜS DU SOL
 
-Album:                          | Surrender
+Album:                           Surrender
 
-Artist Genres:                  | ['australian electropop', 'indietronica']
+Artist Genres:                   ['australian electropop', 'indietronica']
 
 --------------------------------------------
 
