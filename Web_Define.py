@@ -15,13 +15,20 @@ cid     = << Get from Spotify Dev >>
 secret  = << Get from Spotify Dev >>
 
 #Authentication - without user
-client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
-sp = spotipy.Spotify(client_credentials_manager = client_credentials_manager)
+client_credentials_manager 
+  = SpotifyClientCredentials(client_id=cid, client_secret=secret)
 
-playlist_link = input("Spotify Playlist 'Share' Link: ")
-playlist_URI = playlist_link.split("/")[-1].split("?")[0]
-track_uris = [x["track"]["uri"] for x in sp.playlist_tracks(playlist_URI)["items"]]
-size = len(sp.playlist_tracks(playlist_URI)["items"])
+sp 
+  = spotipy.Spotify(client_credentials_manager = client_credentials_manager)
+
+playlist_link 
+  = input("Spotify Playlist 'Share' Link: ")
+playlist_URI 
+  = playlist_link.split("/")[-1].split("?")[0]
+track_uris 
+  = [x["track"]["uri"] for x in sp.playlist_tracks(playlist_URI)["items"]]
+size 
+  = len(sp.playlist_tracks(playlist_URI)["items"])
 print("Playlist Details: ")
 print("--------------------------------------------")
 
