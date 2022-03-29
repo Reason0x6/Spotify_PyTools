@@ -11,6 +11,7 @@ cid     = << Get from Spotify Dev >>
 secret  = << Get from Spotify Dev >>
 
 
+
 def getClient():
     #Authentication - without user
     client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
@@ -30,7 +31,6 @@ def getPlaylistURI(shareLink):
         playlist_URI = playlist_link.split("/")[-1].split("?")[0]
 
         return playlist_URI
-
 
 def definePlaylist(sp, playlistURI):
     size = len(sp.playlist_tracks(playlistURI)["items"])
@@ -87,3 +87,15 @@ def definePlaylist(sp, playlistURI):
 
 
     return {"Valence" : str(parsed_info['valence']), "Instrumentalness" : str(parsed_info['instrumentalness']), "Top Genres" : genreOut, "Top Keys" : keysOut }
+
+def getSongPreviews(sp, playlistURI):
+    tracks = {}
+    for track in sp.playlist_tracks(playlistURI)["items"]:
+
+        #URI
+        track_preview = track["track"]["preview_url"]
+        track_name = track["track"]["name"]
+       
+        tracks[track_name] = track_preview
+
+    return tracks
